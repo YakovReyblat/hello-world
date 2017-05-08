@@ -1,0 +1,27 @@
+shir@jewishisrael.ccsend.com
+
+manhigut-yehudit@jewishisrael.org
+
+localhost/test/wp-admin
+
+
+http://localhost/test/wp-content/uploads/234.
+http://localhost/test/wp-content/uploads/2017/05/234.jpg
+
+http://localhost/test/
+
+http://localhost/mrp/
+
+http://localhost/test/
+
+#phpMyAdmin
+localhost/phpmyadmin
+
+remove database using phpMyAdmin console
+focus(click) on needed database -> Opertations -> Drop the database (Drop)
+
+00_WEEK_05-082017 - 05-122017
+
+GitHub DeskTop
+
+http://Views/yreyblat_HHSC_DM_Webservices_2.1a
