@@ -5,7 +5,7 @@ manhigut-yehudit@jewishisrael.org
 localhost/test/wp-admin
 
 
-http://localhost/test/wp-content/uploads/234.
+http://localhost/test/wp-content/uploads/234
 http://localhost/test/wp-content/uploads/2017/05/234.jpg
 
 http://localhost/test/
