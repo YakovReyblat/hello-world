@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="HHSC_DM_WebService">
+    <property environment="env"/>
+	<property name="build.dir" value="WebContent"/> 
+    <property name="JUNIT_HOME" value="../../bea/tools/eclipse_pkgs/2.0/eclipse_3.3.2/eclipse/plugins/org.junit_3.8.2.v200706111738"/>
+    <property name="ECLIPSE_HOME" value="../../bea/tools/eclipse_pkgs/2.0/eclipse_3.3.2/eclipse"/>
+	<property name="env.WL_SERVER_HOME" value="C:\\bea\\weblogic924" />
+	<property name="env.WAR_PRJ_DIR" value="." />
+	<property name="env.EAR_PRJ_DIR" value="../HHSC_DM_WebServiceEAR" />
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.5"/>
+    <property name="source" value="1.5"/>
+    <path id="Enterprise Application Libraries [HHSC_DM_WebServiceEAR].libraryclasspath">
+        <pathelement location="${env.EAR_PRJ_DIR}/EarContent/APP-INF/classes"/>
+    </path>
+    <path id="Shared Library [wls-commonslogging-bridge].libraryclasspath">
+        <pathelement location="../.metadata/.plugins/com.bea.workshop.wls.core/libraries/wls-commonslogging-bridge_1.0_1.1/1/APP-INF/lib/commons-logging.jar"/>
+        <pathelement location="../.metadata/.plugins/com.bea.workshop.wls.core/libraries/wls-commonslogging-bridge_1.0_1.1/1/APP-INF/lib/wlcommons-logging.jar"/>
+    </path>
+    <path id="Apache XMLBeans v2.1.libraryclasspath">
+        <pathelement location="../../bea/tools/eclipse_pkgs/2.0/pkgs/eclipse/plugins/com.bea.workshop.thirdparty.xmlbeans.v21_1.2.0.20080711173356.jar"/>
+    </path>
+    <path id="Shared Library [weblogic-controls-1.0].libraryclasspath">
+        <pathelement location="../.metadata/.plugins/com.bea.workshop.wls.core/libraries/weblogic-controls-1.0_1.0_1.0/1/APP-INF/lib/weblogic-controls.jar"/>
+        <pathelement location="../.metadata/.plugins/com.bea.workshop.wls.core/libraries/weblogic-controls-1.0_1.0_1.0/1/APP-INF/lib/weblogic-webservice-control.jar"/>
+        <pathelement location="../.metadata/.plugins/com.bea.workshop.wls.core/libraries/weblogic-controls-1.0_1.0_1.0/1/APP-INF/lib/wlcommons-logging.jar"/>
+        <pathelement location="../.metadata/.plugins/com.bea.workshop.wls.core/libraries/weblogic-controls-1.0_1.0_1.0/1/weblogic-timer-control.jar"/>
+        <pathelement location="../.metadata/.plugins/com.bea.workshop.wls.core/libraries/weblogic-controls-1.0_1.0_1.0/1/weblogic-messagebuffer-mdb.jar"/>
+    </path>
+    <path id="MSlib.userclasspath"/>
+    <path id="NIEMDataModel.userclasspath"/>
+    <path id="PrtLib.userclasspath"/>
+    <path id="J2ee.userclasspath">
+        <pathelement location="../../bea/workshop_10.3/workshop4WP/eclipse/plugins/com.m7.nitrox_3.5.100.200807251738/lib/j2ee-1.4.jar"/>
+    </path>
+    <path id="WebLogic System Libraries.libraryclasspath">
+        <pathelement location="${env.WL_SERVER_HOME}/server/lib/api.jar"/>
+        <pathelement location="${env.WL_SERVER_HOME}/server/lib/wls-api.jar"/>
+    </path>
+    <path id="HHSC_DM_WebService.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="Enterprise Application Libraries [HHSC_DM_WebServiceEAR].libraryclasspath"/>
+        <path refid="Shared Library [wls-commonslogging-bridge].libraryclasspath"/>
+        <path refid="Apache XMLBeans v2.1.libraryclasspath"/>
+        <path refid="Shared Library [weblogic-controls-1.0].libraryclasspath"/>
+        <pathelement location="${JUNIT_HOME}/junit.jar"/>
+        <path refid="MSlib.userclasspath"/>
+        <path refid="NIEMDataModel.userclasspath"/>
+        <path refid="PrtLib.userclasspath"/>
+        <pathelement location="/c/DevLibs/wljndi.jar"/>
+        <pathelement location="/c/DevLibs/ComLib/icu4j-4_2_1.jar"/>
+        <pathelement location="/c/DevLibs/ComLib/jasypt-1.5.jar"/>
+        <pathelement location="${env.WL_SERVER_HOME}/server/lib/weblogic.jar"/>
+        <pathelement location="/c/DevLibs/ComLib/javaapi.jar"/>
+        <path refid="J2ee.userclasspath"/>
+        <path refid="WebLogic System Libraries.libraryclasspath"/>
+        <pathelement location="WebContent/lib/vbr_p8cm.jar"/>
+        <pathelement location="WebContent/lib/commons-codec-1.1.jar"/>
+        <pathelement location="WebContent/lib/commons-lang-2.1.jar"/>
+        <pathelement location="WebContent/lib/icu4j-4_2_1.jar"/>
+        <pathelement location="WebContent/lib/ITLMToolkit.jar"/>
+        <pathelement location="WebContent/lib/jasypt-1.5.jar"/>
+        <pathelement location="WebContent/lib/javaapi.jar"/>
+        <pathelement location="WebContent/lib/listener.jar"/>
+        <pathelement location="WebContent/lib/log4j-1.2.15.jar"/>
+        <pathelement location="WebContent/lib/p8cjares.jar"/>
+        <pathelement location="WebContent/lib/Jace.jar"/>
+    	<pathelement location="WebContent/MSlib/webservices-tools.jar"/>
+    </path>
+    <path id="run.GetContentListWebServiceTest.bootclasspath">
+        <path refid="WebLogic System Libraries.libraryclasspath"/>
+    </path>
+    <path id="run.GetDocumentWebServiceTest.bootclasspath">
+        <path refid="WebLogic System Libraries.libraryclasspath"/>
+    </path>
+    <target name="init">
+	<mkdir dir="../HHSC_DM_WebService/.apt_src"/>
+        <mkdir dir="build/classes"/>
+    	<mkdir dir="build/assembly/.src"/>
+    	<mkdir dir="../HHSC_DM_WebService/build/jws/weboutput"/>
+    	
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="test" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir=".apt_src" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="build/assembly/.src" excludes="**/*.launch, **/*.java"/>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="cleanall,HHSC_DM_WebService" name="build"/>
+	
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+	
+		
+	<taskdef name="jwsc"  classname="weblogic.wsee.tools.anttasks.JwscTask">
+		<classpath refid="HHSC_DM_WebService.classpath"/>
+    </taskdef>
+	
+	<taskdef name="wsdlc"  classname="weblogic.wsee.tools.anttasks.WsdlcTask">
+			<classpath refid="HHSC_DM_WebService.classpath"/>
+	 </taskdef>
+	
+	
+	
+	<target name="HHSC_DM_WebService" description="HHSC_DM_WebService" depends="init">		
+						
+			    <delete file="${env.EAR_PRJ_DIR}/HHSC_DM_WebService.war"/>
+		        <delete file="${env.EAR_PRJ_DIR}/HHSC_DM_WebServiceEAR.ear"/>
+		
+		
+		<wsdlc
+		          srcWsdl="src/gov/nyc/hhsconnect/dm/webservice/HHSC_DM_WebServiceService.wsdl"
+		          destJwsDir="${env.EAR_PRJ_DIR}" 
+		          packageName="gov.nyc.hhsconnect.dm.webservice"  />
+		
+		<!-- generate web service artifacts from java file HHSC_DM_WebService.java; create WAR file  -->
+				
+		<jwsc sourcepath="src" srcdir="src/gov/nyc/hhsconnect/dm/webservice"  destdir="${env.EAR_PRJ_DIR}" tempdir="temp" verbose="on" debug="on" keepGenerated="no" classpathref="HHSC_DM_WebService.classpath">
+			<jws file="HHSC_DM_WebService.java" />
+		</jwsc>
+		
+		
+	
+		<!-- recompile all source code because addition .class files like XXX_Test.java are needed for the war file. Create classes-->
+		
+		<javac srcdir="src"
+		         destdir="build/classes"
+			     classpathref="HHSC_DM_WebService.classpath"
+			     excludes="gov/nyc/hhsconnect/dm/webservice/**,gov/nyc/hhsconnect/dm/GetClassPath.java"
+			     debug="on"
+		         source="1.4"
+		  />
+		
+		<javac srcdir="test"
+				         destdir="build/classes"
+					     classpathref="HHSC_DM_WebService.classpath"
+					     debug="on"
+				         source="1.4"
+				  />
+		
+	<!-- Adding additional files into war file -->  		
+		
+		
+		
+		<zip destfile="${env.EAR_PRJ_DIR}/HHSC_DM_WebService.war" update="true">	
+		<zipfileset dir="WebContent/lib" prefix="WEB-INF/lib"> 
+	  				<include name="*.jar"/> 
+	  	</zipfileset>
+		<zipfileset dir="WebContent/WEB-INF/META-INF" prefix="WEB-INF/META-INF"> 
+			  				<include name="binding-file.*"/> 
+		</zipfileset>
+		<zipfileset dir="WebContent/META-INF" prefix="META-INF"> 
+					  				<include name="*.xml"/> 
+		</zipfileset>
+	  	<zipfileset dir="build/classes" prefix="WEB-INF/classes"> 
+	  		  				<include name="**/*.class"/> 
+	  	</zipfileset>
+	  	<zipfileset dir="src" prefix="WEB-INF/classes"> 
+	  		  	<include name="config/configuration.properties"/> 
+	  		    <include name="config/log4j.properties"/> 
+	  		    <include name="config/testdata.properties"/> 
+	  		    <include name="gov/nyc/hhsconnect/dm/webservice/HHSC_DM_LoggingHandlers.xml"/> 
+	  		    <include name="gov/nyc/hhsconnect/dm/webservice/HHSC_DM_WebServiceService.wsdl"/> 
+	  	</zipfileset>			
+		
+		<!--
+		<zipfileset dir="src/gov/nyc/hhsconnect/dm/webservice" prefix="web-inf"> 				  		  	
+				<include name="HHSC_DM_WebServiceService.wsdl"/> 
+		</zipfileset>
+		-->
+		
+	   </zip>
+		
+		
+	
+		<!-- update -->
+		<zip destfile="${env.EAR_PRJ_DIR}/HHSC_DM_WebService_or.war" update="true">
+		  <zipfileset src="${env.EAR_PRJ_DIR}/HHSC_DM_WebService.war">
+		  	<!--
+		  	<exclude name="**/HHSC_DM_WebServiceService.wsdl"/>		 
+		  	-->
+		  	<exclude name="**/web.xml"/>
+		  	<exclude name="**/HHSC_DM_WebServiceService-annotation.xml"/>
+		  </zipfileset>
+		</zip>		
+		
+		
+		<zip destfile="${env.EAR_PRJ_DIR}/HHSC_DM_WebService_or.war" update="true">
+			
+			
+			
+			<zipfileset dir="WebContent/WEB-INF" prefix="WEB-INF"> 				  		  	
+							<include name="web.xml"/>
+			</zipfileset>			
+			<zipfileset dir="WebContent/WEB-INF/META-INF" prefix="WEB-INF"> 				  		  	
+							<include name="HHSC_DM_WebServiceService-annotation.xml"/>
+			</zipfileset>
+			
+		</zip>
+        
+		<move file="${env.EAR_PRJ_DIR}/HHSC_DM_WebService_or.war" tofile="${env.EAR_PRJ_DIR}/HHSC_DM_WebService.war" />
+				
+	
+	   <!--creating ear file from war file -->
+		<ear destfile="${env.EAR_PRJ_DIR}/HHSC_DM_WebServiceEAR.ear" appxml="${env.EAR_PRJ_DIR}/EarContent/META-INF/application.xml">       
+			<fileset dir="${env.EAR_PRJ_DIR}" includes="HHSC_DM_WebService.war"/>  				
+			<fileset dir="${env.EAR_PRJ_DIR}/EarContent">             
+				<include name="/APP-INF/classes/*.properties"/>	
+					<include name="/APP-INF/lib/**"/>	
+					<include name="/META-INF/weblogic-application.*"/>
+				</fileset>					
+			</ear>
+	
+	</target>
+		
+	
+	
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
